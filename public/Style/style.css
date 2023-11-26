@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+::selection {
+    background: transparent;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #E0E0E0;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 90vh;
+    background-color: #F6F6F6;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
+    width: 100%;
+    height: 30%;
+}
+
+header p {
+    font-size: 24px;
+    color: rgb(0, 102, 204);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#formInput {
+    display: flex;
+    align-items: center;
+    width: 88%;
+}
+
+form input[type=text] {
+    width: 80%;
+    padding: 18px;
+    outline: none;
+    border: 2px solid rgb(0, 102, 204);
+    border-radius: 10px;
+}
+
+form input[type=submit] {
+    background: rgb(0, 102, 204);
+    font-size: 14px;
+    width: 75px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 60%;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+#section-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 75%;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+}
+
+ul::-webkit-scrollbar {
+    display: none;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    height: 59px;
+    padding: 15px;
+    margin: 5px;
+    border: 2px solid rgb(0, 102, 204);
+    border-radius: 10px;
+}
+
+#section-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    height: 15%;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+#buttons input {
+    width: 70px;
+    cursor: pointer;
+    margin: 0;
+}
+
+img {
+    width: auto;
+    height: 30px;
+}
+
+input {
+    margin: 6px;
+}
+
+#getInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+#ul-1 {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 100%;
+}
+
+i {
+    margin: 5px;
+}
+
+#ul-2 {
+    display: flex;
+    flex-direction: row;
+    width: 60px;
+    height: 30px;
+}
+
+.complete {
+    text-decoration-line: line-through;
+}
+
+#edit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#edit span {
+    display: 'flex';
+    flex-direction: row;
+    justify-content: space-between;
+    width: 10%;
+}
+
+#confirmEdit {
+    display: flex;
+    flex-direction: row;
+}
+
+.inputEdit {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 12px 20px 12px 20px;
+    margin: 0;
+    background-color: #DDDDDD;
+    font: 16px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#login {
+    border: 200px;
+    background-color: #8ab1db;
+    color: #fff;
+}
+
+#signup {
+    background-color: rgb(51, 102, 153);
+}
+
+#downloadButton {
+    background-color: rgb(51, 102, 153);
+}
+
+#uploadButton {
+    background-color: rgb(51, 102, 153);
+}
+
+#logout {
+    background-color: #1e3f62;
+    color: white;
+}
+
+#addButton {
+    cursor: pointer;
+}
