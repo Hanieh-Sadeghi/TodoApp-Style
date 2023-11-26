@@ -4,32 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./public/Style/login.css" />
     <title>Login</title>
   </head>
   <body>
-    <h2>Sign in</h2>
-    <form action="">
-      <div class="container">
-        <label for="uname">Username</label>
-        <input type="text" placeholder="Enter Username" name="uname" required />
+    <div class="container">
+      <form id="form" class="form">
+        <h2>Sign in</h2>
 
-        <label for="psw">Password</label>
-        <input
-          type="password"
-          placeholder="Enter Password"
-          name="psw"
-          required
-        />
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter username" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" />
+          <small>Error message</small>
+        </div>
 
-        <button type="submit">Login</button>
-        <a href="#">Guest User</a>
-
-        <p>Don't have an account ?</p>
-        <a href="#"> Sign up</a>
-      </div>
-    </form>
+        <button>Login</button>
+        <br />
+        <a href="/">Guest user</a>
+        <br />
+        <br />
+        <small>Don't have an account ?</small>
+        <small><a href="/signup">Sign up</a></small>
+      </form>
+    </div>
   </body>
 </html>

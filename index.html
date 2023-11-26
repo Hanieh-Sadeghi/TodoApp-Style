@@ -14,32 +14,31 @@
   <body>
     <div class="container">
       <header>
-        <p>Guest Add a New Task</p>
-        <section>
-          <form action="">
-            <input type="text" placeholder="Write new Task here" />
-            <input type="submit" value="Add" />
-          </form>
-        </section>
+        <p id="name">Guest Add a New Task</p>
+        <form id="formInput" name="todoForm">
+          <input
+            id="textField"
+            type="text"
+            placeholder="Write new task here ..."
+          />
+          <input id="addButton" type="submit" value="Add" />
+        </form>
       </header>
-
-      <main> 
-        <section>
-          <ul>
-            <li>
-              <input type="checkbox" />
-              <span>hi </span>
-              <i class="fa fa-pencil"></i>
-              <i class="fa fa-trash-o"></i>
-            </li>
-          </ul>
+      <main>
+        <section id="section-list">
+          <ul id="list"></ul>
         </section>
-        <section>
-          <input type="submit" value="All" />
-          <input type="submit" value="Active" />
-          <input type="submit" value="Complete" />
-          <input type="submit" value="Sign Up" />
-          <input type="submit" value="Login" />
+        <section id="section-buttons">
+          <form id="buttons">
+            <input id="allButton" type="submit" value="All" />
+            <input id="activeButton" type="submit" value="Active" />
+            <input id="completeButton" type="submit" value="Complete" />
+            <!-- <input id="downloadButton" type="submit" value="Download"> -->
+            <!-- <input id="uploadButton" type="submit" value="Upload"> -->
+            <input id="signup" type="submit" value="signup" />
+            <input id="login" type="submit" value="login" />
+            <input id="logout" type="submit" value="logout" />
+          </form>
         </section>
       </main>
       <footer>

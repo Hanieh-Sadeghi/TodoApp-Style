@@ -4,48 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./public/Style/login.css" />
     <title>Sign Up</title>
   </head>
   <body>
-    <form action="">
-      <div class="container">
-        <h1>Register with US</h1>
-
-        <label for="name">Name</label>
-        <input type="text" placeholder="Enter Name" name="name" required />
-
-        <label for="Username">Username</label>
-        <input
-          type="text"
-          placeholder="Enter Username"
-          name="Username"
-          required
-        />
-
-        <label for="email">Email</label>
-        <input type="text" placeholder="Enter Email" name="email" required />
-
-        <label for="psw">Password</label>
-        <input
-          type="password"
-          placeholder="Enter Password"
-          name="psw"
-          required
-        />
-
-        <label for="psw-confirm">Confirm Password</label>
-        <input
-          type="password"
-          placeholder="Confirm Password"
-          name="psw-confirm"
-          required
-        />
-        <input type="submit">
-        <p>Already have an account ? <a href="#">Login</a></p>
-      </div>
-    </form>
+    <div class="container">
+      <form id="form" class="form">
+        <h2>Register with Us</h2>
+        <div class="form-control">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter name" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter username" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter email" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="password2">Confirm Password</label>
+          <input
+            type="password"
+            id="password2"
+            placeholder="Enter password again"
+          />
+          <small>Error message</small>
+        </div>
+        <button>Submit</button>
+        <br />
+        <small>Already have an account ?</small>
+        <small><a href="/signin">Login</a></small>
+      </form>
+    </div>
   </body>
 </html>
